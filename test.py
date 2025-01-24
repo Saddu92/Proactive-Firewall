@@ -9,7 +9,7 @@ def packet_handler(packet):
 
 # Capture packets
 print("Starting packet capture. Press Ctrl+C to stop.")
-packets = sniff(iface="Wi-Fi", count=100, prn=packet_handler)  # Capture 100 packets
+packets = sniff(iface="Wi-Fi", count=500, prn=packet_handler)  # Capture 100 packets
 
 # Save packets to a PCAP file
 pcap_file = "captured_packets.pcap"
